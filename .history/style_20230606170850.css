@@ -1,0 +1,38 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: url("image/bg-image.jpg");
+
+}
+
+nav li span:hover{
+  text-decoration: none;
+  font-weight: bolder;
+  background: linear-gradient(90deg, #A1ABE0 0%, #89A0E7 22.71%, #367CFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}

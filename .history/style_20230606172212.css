@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background: url("image/bg-image.jpg");
+
+}
+
+span:hover{
+  /* text-decoration: none; */
+  background: rgb(89,160,224);
+  background: linear-gradient(90deg, rgba(89,160,224,1) 0%, rgba(105,167,222,1) 45%, rgba(34,80,200,1) 89%);  -webkit-background-clip: text;
+  /* -webkit-text-fill-color: transparent; */
+  /* background-clip: text; */
+  /* text-fill-color: transparent; */
+  font-weight: bolder !important; /* Add this line to explicitly set the font weight to bold on hover */
+}
