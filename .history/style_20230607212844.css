@@ -192,13 +192,13 @@ nav ul li a.active::after{
 }
 
 .login-box a:hover {
-  background: #A1ABE0;
+  background: #6a7cd6;
   color: #fff;
   border-radius: 5px;
-  box-shadow: 0 0 5px #A1ABE0,
-              0 0 25px #A1ABE0,
-              0 0 50px #A1ABE0,
-              0 0 100px #A1ABE0;
+  box-shadow: 0 0 5px #6a7cd6,
+              0 0 25px #6a7cd6,
+              0 0 50px #6a7cd6,
+              0 0 100px #6a7cd6;
 }
 
 .login-box a span {
@@ -220,7 +220,7 @@ nav ul li a.active::after{
   bottom: 2px;
   left: -100%;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, #A1ABE0);
   animation: btn-anim1 1s linear infinite;
 }

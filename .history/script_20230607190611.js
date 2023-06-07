@@ -1,4 +1,7 @@
-$('.logo').addClass('show');
+AOS.init({
+  mirror: true, // whether elements should animate out while scrolling past them
+
+});
 
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
@@ -8,9 +11,19 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
-    }
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        $('.to-aos').hide(0);
+        $('.to-aos').removeClass('aos-init').removeClass('aos-animate');
+      },
+      slideChangeTransitionEnd: function () {
+        $('.to-aos').show(0);
+        AOS.init();
+      },
+    } 
+    
   });
-
 
 // Handle navigation link clicks
 const navLinks = document.querySelectorAll('nav ul li a');
@@ -30,6 +43,7 @@ const checkLogo = (activeSlideIndex, logo) => {
     logo.classList.remove('show');
   }else{
     logo.classList.remove('invisible');
+
     logo.classList.add('show');
   }
 }
@@ -48,36 +62,16 @@ swiper.on('slideChange', () => {
     const slideIndex = Array.from(link.parentNode.parentNode.children).indexOf(link.parentNode);
     link.classList.toggle('active', slideIndex === activeSlideIndex);
   });
-
   checkLogo(activeSlideIndex, logo);
-  
-  switch (activeSlideIndex) {
-    case 0:
-      $('logo').addClass('zoom-in');
-      break;
 
-    case 1:
-      $('.about-point').addClass('fade-right');
-      break;
-
-    case 2:
-      line.classList.add('animate');
-      $('.service').addClass('fade-up');
-      break;
-
-    default:
-      break;
+  if (activeSlideIndex === 2) {
+    line.classList.add('animate');
+  } else {
+    line.classList.remove('animate');
   }
-  if(activeSlideIndex == 2){
-    $('.service-title').addClass('fade-left');
-  }else{
-    $('.service-title').removeClass('fade-left');
-    $('.service-title').addClass('fade-right');
-  }
-  // if (activeSlideIndex === 2) {
-  //   line.classList.add('animate');
-  // }
 });
+
+
 
 
 

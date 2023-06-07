@@ -1,6 +1,5 @@
-$('.logo').addClass('show');
-
 var swiper = new Swiper(".mySwiper", {
+    // speed: 500, // set the slide transition speed to 1000 milliseconds (1 second)
     direction: "vertical",
     slidesPerView: 1,
     effect: "fade",
@@ -10,7 +9,6 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     }
   });
-
 
 // Handle navigation link clicks
 const navLinks = document.querySelectorAll('nav ul li a');
@@ -30,6 +28,7 @@ const checkLogo = (activeSlideIndex, logo) => {
     logo.classList.remove('show');
   }else{
     logo.classList.remove('invisible');
+
     logo.classList.add('show');
   }
 }
@@ -48,14 +47,9 @@ swiper.on('slideChange', () => {
     const slideIndex = Array.from(link.parentNode.parentNode.children).indexOf(link.parentNode);
     link.classList.toggle('active', slideIndex === activeSlideIndex);
   });
-
   checkLogo(activeSlideIndex, logo);
   
   switch (activeSlideIndex) {
-    case 0:
-      $('logo').addClass('zoom-in');
-      break;
-
     case 1:
       $('.about-point').addClass('fade-right');
       break;

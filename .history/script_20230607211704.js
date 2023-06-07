@@ -1,5 +1,3 @@
-$('.logo').addClass('show');
-
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,
@@ -11,6 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
+$('.logo').addClass('zoom-in');
 
 // Handle navigation link clicks
 const navLinks = document.querySelectorAll('nav ul li a');

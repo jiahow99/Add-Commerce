@@ -1,5 +1,3 @@
-$('.logo').addClass('show');
-
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,
@@ -11,6 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
+$('logo').addClass('zoom-in');
 
 // Handle navigation link clicks
 const navLinks = document.querySelectorAll('nav ul li a');
@@ -27,10 +26,11 @@ navLinks.forEach(link => {
 const checkLogo = (activeSlideIndex, logo) => {
   if( activeSlideIndex == 0 ){
     logo.classList.add('invisible');
-    logo.classList.remove('show');
+    logo.classList.remove('fade-left');
   }else{
     logo.classList.remove('invisible');
-    logo.classList.add('show');
+
+    logo.classList.add('fade-left');
   }
 }
 

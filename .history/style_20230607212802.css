@@ -129,7 +129,7 @@ nav ul li a.active::after{
 }
 
 .login-box {
-  background: rgba(255, 255, 255, 0.116);
+  background: rgba(255, 255, 255, 0);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.2px);
@@ -220,7 +220,7 @@ nav ul li a.active::after{
   bottom: 2px;
   left: -100%;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, #A1ABE0);
   animation: btn-anim1 1s linear infinite;
 }

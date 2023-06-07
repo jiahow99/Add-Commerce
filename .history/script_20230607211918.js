@@ -1,4 +1,5 @@
-$('.logo').addClass('show');
+$('.logo').removeClass('invisible');
+$('.logo').addClass('zoom-in');
 
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",

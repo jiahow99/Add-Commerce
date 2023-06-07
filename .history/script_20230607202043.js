@@ -1,5 +1,3 @@
-$('.logo').addClass('show');
-
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,
@@ -10,7 +8,6 @@ var swiper = new Swiper(".mySwiper", {
       clickable: true,
     }
   });
-
 
 // Handle navigation link clicks
 const navLinks = document.querySelectorAll('nav ul li a');
@@ -30,6 +27,7 @@ const checkLogo = (activeSlideIndex, logo) => {
     logo.classList.remove('show');
   }else{
     logo.classList.remove('invisible');
+
     logo.classList.add('show');
   }
 }
@@ -48,35 +46,19 @@ swiper.on('slideChange', () => {
     const slideIndex = Array.from(link.parentNode.parentNode.children).indexOf(link.parentNode);
     link.classList.toggle('active', slideIndex === activeSlideIndex);
   });
-
   checkLogo(activeSlideIndex, logo);
   
-  switch (activeSlideIndex) {
-    case 0:
-      $('logo').addClass('zoom-in');
-      break;
-
-    case 1:
-      $('.about-point').addClass('fade-right');
-      break;
-
-    case 2:
-      line.classList.add('animate');
-      $('.service').addClass('fade-up');
-      break;
-
-    default:
-      break;
-  }
-  if(activeSlideIndex == 2){
-    $('.service-title').addClass('fade-left');
+  if(activeSlideIndex == 1){
+    $('.pp').addClass('fade-right');
   }else{
-    $('.service-title').removeClass('fade-left');
-    $('.service-title').addClass('fade-right');
+    $('.pp').removeClass('fade-right');
   }
-  // if (activeSlideIndex === 2) {
-  //   line.classList.add('animate');
-  // }
+
+  if (activeSlideIndex === 2) {
+    line.classList.add('animate');
+  } else {
+    line.classList.remove('animate');
+  }
 });
 
 

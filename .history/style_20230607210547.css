@@ -114,7 +114,7 @@ nav ul li a.active::after{
 }
 
 .contact .contact-form{
-  /* background: rgba(255, 255, 255, 0.22); */
+  background: rgba(255, 255, 255, 0.22);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   /* backdrop-filter: blur(1px); */
   -webkit-backdrop-filter: blur(6.8px);
@@ -129,7 +129,7 @@ nav ul li a.active::after{
 }
 
 .login-box {
-  background: rgba(255, 255, 255, 0.116);
+  background: rgba(255, 255, 255, 0.073);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.2px);
@@ -220,39 +220,11 @@ nav ul li a.active::after{
   bottom: 2px;
   left: -100%;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, #A1ABE0);
   animation: btn-anim1 1s linear infinite;
 }
 
-#nav-logo.show {
-  animation: navlogo-fade-left 0.3s ease-in-out forwards;
-}
-@keyframes navlogo-fade-left {
-  from {
-    opacity: 0.5;
-    transform: translateX(-15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-.logo.show{
-  animation: logo-fade-left 0.7s ease-in-out forwards;
-}
-@keyframes logo-fade-left{
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Fade right */
 .fade-right {
@@ -272,7 +244,7 @@ nav ul li a.active::after{
 
 /* Fade left */
 .fade-left {
-  animation: fade-left 0.5s ease-in-out forwards;
+  animation: fade-left 0.5s ease-in-out;
   animation-delay: var(--delay);
 }
 @keyframes fade-left {

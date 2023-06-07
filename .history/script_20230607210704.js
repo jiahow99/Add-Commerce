@@ -1,5 +1,3 @@
-$('.logo').addClass('show');
-
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,
@@ -11,6 +9,7 @@ var swiper = new Swiper(".mySwiper", {
     }
   });
 
+$('logo').addClass('zoom-in');
 
 // Handle navigation link clicks
 const navLinks = document.querySelectorAll('nav ul li a');
@@ -30,9 +29,11 @@ const checkLogo = (activeSlideIndex, logo) => {
     logo.classList.remove('show');
   }else{
     logo.classList.remove('invisible');
+
     logo.classList.add('show');
   }
 }
+
 
 const activeSlideIndex = swiper.realIndex;
 const logo = document.getElementById('nav-logo');
@@ -48,7 +49,6 @@ swiper.on('slideChange', () => {
     const slideIndex = Array.from(link.parentNode.parentNode.children).indexOf(link.parentNode);
     link.classList.toggle('active', slideIndex === activeSlideIndex);
   });
-
   checkLogo(activeSlideIndex, logo);
   
   switch (activeSlideIndex) {
