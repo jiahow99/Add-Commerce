@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Commerce</title>
+
+    <!-- Fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> -->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav class="absolute top-0 w-full z-10">
+    <div class="flex justify-between items-center w-10/12 mx-auto" id="nav">
+      <div class="w-2/12" id="nav-logo">
+        <img src="image/logo.png" alt="add-commerce-logo" class="w-full">
+      </div>
+      <ul class="flex text-white gap-12 py-12">
+        <li class="uppercase"><a href="#home" class="text-[17px] font-[700] tracking-widest relative active">Home</a></li>
+        <li class="uppercase"><a href="#about" class="text-[17px] font-[700] tracking-widest relative ">About</a></li>
+        <li class="uppercase"><a href="#services" class="text-[17px] font-[700] tracking-widest relative ">Services</a></li>
+        <li class="uppercase"><a href="#contact" class="text-[17px] font-[700] tracking-widest relative ">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Start Home -->
+      <div class="swiper-slide" id="home">
+        <div class="home min-h-screen">
+          <!-- Logo -->
+          <div class="w-4/12 mx-auto mt-[15%]">
+            <img src="image/logo.png" class="w-full" alt="add-commerce-logo">
+          </div>
+          <!-- Services -->
+          <div class="w-full flex justify-center gap-2 mt-10 text-lg text-white tracking-wider">
+            <span>E-commerce Mangement</span>
+            <span>|</span>
+            <span>Live Commerce Management</span>
+            <span>|</span>
+            <span>Digital Marketing</span>
+            <span>|</span>
+            <span>New Media Content Marketing</span>
+          </div>
+          <div class="scroll-down">
+            <div class="w-[1.5%] absolute left-1/2 transform -translate-x-1/2 bottom-7 animate-bounce">
+              <img src="image/scroll-down.png" class="w-full" alt="scroll-down">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Home -->
+
+      <!-- Start About -->
+      <div class="swiper-slide" id="about">
+        <div class="about min-h-screen w-10/12 mx-auto">
+          <!-- Title -->
+          <div class="about-us-title relative w-fit mx-auto mt-[9%]">
+            <h1 class="capitalize text-white text-5xl tracking-wider font-medium">About Us</h1>
+            <div class="bottom-line absolute -bottom-2 right-0 bg-[#367CFF] w-[70%] h-1 rounded-xl text-right"></div>
+          </div>
+          <!-- Content -->
+          <div class="flex w-full justify-between mt-16">
+            <!-- Left -->
+            <div class="w-7/12 mx-auto flex flex-col gap-10">
+              <div class="point-1 flex items-center">
+                <div class="w-2/12">
+                  <div class="w-9/12">
+                    <img src="image/share.png" alt="introduction" class="w-full">
+                  </div>
+                </div>
+                <div class="w-10/12 about-text p-5 rounded-lg text-white text-[16px] tracking-widest h-fit">
+                  At ADD Commerce, we understand that the world of online retail is constantly evolving, and businesses or brand need innovative solutions to stay ahead of the competition.
+                </div>
+              </div>
+              <div class="point-2 flex items-center">
+                <div class="w-2/12">
+                  <div class="w-9/12">
+                    <img src="image/idea.png" alt="introduction" class="w-full">
+                  </div>
+                </div>
+                <div class="w-10/12 about-text p-5 rounded-lg text-white text-[16px] tracking-widest h-fit">
+                  Offering seamless designing, developing your online store to managing inventory, full communication and marketing plan, new social commerce management and providing exceptional customer service.                </div>
+              </div>
+              <div class="point-3 flex items-center">
+                <div class="w-2/12">
+                  <div class="w-9/12">
+                    <img src="image/sales.png" alt="introduction" class="w-full">
+                  </div>
+                </div>
+                <div class="w-10/12 about-text p-5 pb-10 rounded-lg text-white text-[16px] tracking-widest h-fit">
+                  Build strong online presence, drive sales and exceed customer expectations with us !</div>
+              </div>
+            </div>
+            <!-- Right -->
+            <div class="w-4/12 ml-10 flex items-center">
+              <div class="w-full">
+                <img src="image/about-us-illustration.png" alt="about-us-illustration" class="w-full">
+              </div>
+            </div>
+            <div class="scroll-down">
+              <div class="w-[1.5%] absolute left-1/2 transform -translate-x-1/2 bottom-3 animate-bounce">
+                <img src="image/scroll-down.png" class="w-full" alt="scroll-down">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About -->
+
+      <!-- Start Services -->
+      <div class="swiper-slide" id="services">
+        <div class="services min-h-screen w-10/12 mx-auto">
+          <div class="w-full flex mt-[12%]">
+            <!-- Title -->
+            <div class="w-3/12 flex justify-center relative">
+              <h1 class="text-4xl text-white font-medium my-auto">Our Services</h1>
+              <div class="absolute right-0 line"></div>
+            </div>
+            <!-- Services -->
+            <div class="w-9/12 ">
+              <div class="w-full mx-auto grid grid-cols-3 gap-y-10">
+                
+                <div id="e-commerce">
+                  <div class="w-6/12 mx-auto">
+                    <img src="image/management.png" alt="e-commerce-management" class="w-full">
+                  </div>
+                  <h2 class="services-text mt-2 uppercase font-semibold text-white text-xl whitespace-normal w-9/12 text-center mx-auto">
+                    E-COMMERCE MANAGEMENT
+                  </h2>
+                </div>
+
+                <div id="digital-marketing">
+                  <div class="w-6/12 mx-auto">
+                    <img src="image/digital-marketing.png" alt="digital-marketing" class="w-full">
+                  </div>
+                  <h2 class="services-text uppercase font-semibold text-white text-xl whitespace-normal w-10/12 text-center mx-auto mt-3">
+                    Digital Marketing
+                  </h2>
+                </div>
+
+                <div id="livestream-management">
+                  <div class="w-6/12 mx-auto">
+                    <img src="image/livestream-management.png" alt="livestream-management" class="w-full">
+                  </div>
+                  <h2 class="services-text mt-2 uppercase font-semibold text-white text-xl whitespace-normal w-8/12 text-center mx-auto">
+                    Livestream Management
+                  </h2>
+                </div>
+
+                <div id="idea-pitching">
+                  <div class="w-6/12 mx-auto">
+                    <img src="image/idea-pitching.png" alt="idea-pitching" class="w-full">
+                  </div>
+                  <h2 class="services-text mt-5 uppercase font-semibold text-white text-xl whitespace-normal w-10/12 text-center mx-auto">
+                    Idea Pitching
+                  </h2>
+                </div>
+
+                <div id="seo-optimization">
+                  <div class="w-6/12 mx-auto">
+                    <img src="image/seo-optimization.png" alt="seo-management" class="w-full">
+                  </div>
+                  <h2 class="services-text mt-5 uppercase font-semibold text-white text-xl whitespace-normal w-11/12 text-center mx-auto">
+                    Seo Optimization
+                  </h2>
+                </div>
+  
+                <div id="web-development">
+                  <div class="w-6/12 mx-auto">
+                    <img src="image/web-development.png" alt="web-development" class="w-full">
+                  </div>
+                  <h2 class="services-text mt-5 uppercase font-semibold text-white text-xl whitespace-normal w-10/12 text-center mx-auto">
+                    Web Development
+                  </h2>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <div class="scroll-down">
+            <div class="w-[1.5%] absolute left-1/2 transform -translate-x-1/2 bottom-4 animate-bounce">
+              <img src="image/scroll-down.png" class="w-full" alt="scroll-down">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Services -->
+
+
+      <!-- Start About -->
+      <div class="swiper-slide" id="contact">
+        <div class="contact min-h-screen w-10/12 mx-auto">
+          <div class="w-full flex mt-[15%]">
+            <div class="w-6/12">
+              <div class="w-9/12 mt-14">
+                <img src="image/about-us-illustration.png" alt="about-us" class="w-full">
+              </div>
+            </div>
+            <div class="w-6/12">
+              <div class="w-11/12 mx-auto contact-form rounded-xl">
+                <div class="login-box p-10">
+                  <h2 class="text-4xl font-bold text-center">Contact Us</h2>
+                  <form class="mt-10">
+                    <div class="user-box">
+                      <input type="text" name="name" required="">
+                      <label>Name</label>
+                    </div>
+                    <div class="user-box">
+                      <input type="email" name="email" required="" >
+                      <label>Email</label>
+                    </div>
+                    <div class="user-box">
+                      <input type="text" name="message" required="" style="resize: both;">
+                      <label>Message</label>
+                    </div>
+                    <a href="#">
+                           SEND
+                       <span></span>
+                    </a>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" defer></script>
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+  <!-- Custom Sript -->
+  <script src="script.js" defer></script>
+</body>
+</html>
