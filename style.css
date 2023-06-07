@@ -188,7 +188,7 @@ nav ul li a.active::after{
   overflow: hidden;
   transition: .5s;
   /* margin-top: 40px; */
-  letter-spacing: 4px
+  letter-spacing: 4px;
 }
 
 .login-box a:hover {
@@ -223,4 +223,15 @@ nav ul li a.active::after{
   height: 3px;
   background: linear-gradient(90deg, transparent, #A1ABE0);
   animation: btn-anim1 1s linear infinite;
+}
+
+#nav-logo {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#nav-logo.show {
+  /* Show animation */
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
 }

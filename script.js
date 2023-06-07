@@ -1,3 +1,8 @@
+AOS.init({
+  mirror: true, // whether elements should animate out while scrolling past them
+
+});
+
 var swiper = new Swiper(".mySwiper", {
     direction: "vertical",
     slidesPerView: 1,
@@ -6,6 +11,20 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+    on: {
+      slideChangeTransitionStart: function () {
+        const points = document.querySelectorAll('.to-aos');
+        points.forEach(point => {
+          point.classList.remove('aos-init');
+          point.classList.remove('aos-animate');
+        });
+      },
+      slideChangeTransitionEnd: function () {
+        AOS.init({
+          mirror: true, // whether elements should animate out while scrolling past them
+        });
+      },
     },
   });
 
@@ -24,8 +43,11 @@ navLinks.forEach(link => {
 const checkLogo = (activeSlideIndex, logo) => {
   if( activeSlideIndex == 0 ){
     logo.classList.add('invisible');
+    logo.classList.remove('show');
   }else{
     logo.classList.remove('invisible');
+
+    logo.classList.add('show');
   }
 }
 
@@ -50,15 +72,6 @@ swiper.on('slideChange', () => {
   } else {
     line.classList.remove('animate');
   }
-  
-  // swiper.mousewheel = false;
-  // swiper.allowSlideNext = false;
-  // swiper.allowSlidePrev = false;
-  // setTimeout(function(){
-    // swiper.allowSlideNext = true;
-    // swiper.allowSlidePrev = true;
-    // swiper.mousewheel = true;
-  // }, 1500);
 });
 
 
